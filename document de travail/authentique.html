@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bams-store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <section class="leanding_page">
+        <div class="conteneur">
+            <header class="nav-bar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt=""></a>
+                </div>
+                <nav>
+                    <ul id="menuItem">
+                        <li><a href="index.html"> acceil</a></li>
+                        <li><a href="produits.html"> produits</a></li>
+                        <li><a href="authentique.html"> compte</a></li>
+                    </ul>
+                </nav>
+                <a href="pannier.html"><img src="images/cart.png" alt="cart" width="27px"></a>
+                
+                <img src="images/menu.png" alt="menu" class="menuButton" onclick="toogleButton()">
+            </header>
+            <div class="row">
+
+                <div class="col2">
+                    <img src="images/image1.png" alt="leanding_image">
+                </div>
+                <div class="col2">
+                    <div class="conteneur-form">
+                        <div class="form-button">
+
+                            <span onclick="connexionForm()" >connexion</span>
+                            <span onclick="inscriptionForm()" >inscription</span>
+                            <hr id="indicateur">
+                        </div>
+                        <form id="connexion">
+                            <input type="email" placeholder="votre email">
+                            <input type="password" placeholder="mot de pass">
+                            <input type="submit" value="envoie">
+                            <a href="" class="btn-mot-de-pass">mot de pass oublie</a>
+                        </form>
+                        <form id="inscription">
+                            <input type="text" placeholder="votre nom">
+                            <input type="email" placeholder="votre email">
+                            <input type="password" placeholder="mot de pass">
+                            <input type="submit" value="envoie">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+        <!-- --------------- le footer de la page -->
+        <footer class="footer">
+            <div class="conteneur">
+                <div class="row">
+                    <div class="col6">
+                        <div class="footer-col1">
+                            <p style="color:#fff ; border: 1px solid wheat;">Téléchargez l'application pour téléphone mobile Android et ios</p>
+                            <div class="footer-app">
+                                <img src="images/play-store.png" alt="">
+                                <img src="images/play-store.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col6">
+                        <div class="footer-col2">
+                            <h4> bams-store</h4>
+                            <p> id nemo cupiditate labore saepe repudiandae beatae, autem laborum. Dicta
+                                ducimus soluta deserunt.</p>
+                        </div>
+                    </div>
+                    <div class="col6">
+                        <div class="footer-col3">
+                            <h4>les lien du site</h4>
+                            <ul>
+                                <li><a href=""> a-propos</a></li>
+                                <li><a href=""> service</a></li>
+                                <li><a href=""> acouint</a></li>
+                                <li><a href=""> acceil</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col6">
+                        <div class="footer-col4">
+                            <h4> suivez nous sur reseaux socciaux</h4>
+                            <ul>
+                                <li><a href=""><i class='bx bxl-facebook-circle'></i></a></li>
+                                <li><a href=""><i class='bx bxl-instagram-alt'></i></a></li>
+                                <li><a href=""><i class='bx bxl-whatsapp-square'></i></a></li>
+                                <li><a href=""><i class='bx bxl-youtube'></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <hr>
+            <P class="copyright">tous droit reserver a <span>bams-store </span>&copy; 2024</P>
+
+        </footer>
+
+
+                
+
+        
+        <!-- --------------------javascript  de menu page----------------->
+        <script>
+
+            var menuItem = document.getElementById('menuItem')
+            menuItem.style.maxHeight = '0px';
+            menuItem.style.padding = '0px';
+
+            function toogleButton() {
+                if (menuItem.style.maxHeight == '0px') {
+                    menuItem.style.maxHeight = '200px';
+                    menuItem.style.padding = '10px';
+                }
+                else {
+                    menuItem.style.maxHeight = '0px';
+                    menuItem.style.padding = '0px';
+                }
+            }
+
+        </script>
+
+
+       <!-- ------------------ javascript de section contact----------------------->
+
+
+        <Script>
+
+
+            var connexion = document.getElementById('connexion')
+            var inscription = document.getElementById('inscription')
+            var indicateur = document.getElementById('indicateur')
+
+            function connexionForm(){
+                connexion.style.transform = 'translateX(300px)'
+                inscription.style.transform = 'translateX(300px)'
+                indicateur.style.transform = 'translateX(0px)'
+                
+            }
+            
+            function inscriptionForm(){
+                connexion.style.transform = 'translateX(0px)'
+                inscription.style.transform = 'translateX(0px)'
+                indicateur.style.transform = 'translateX(120px)'
+                
+            }
+        </Script>
+
+</body>
+
+</html>

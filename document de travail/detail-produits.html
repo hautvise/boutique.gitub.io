@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bams-store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <section class="leanding_page">
+        <div class="conteneur">
+            <header class="nav-bar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt=""></a>
+                </div>
+                <nav>
+                    <ul id="menuItem">
+                        <li><a href="index.html"> acceil</a></li>
+                        <li><a href="produits.html"> produits</a></li>
+                        <li><a href="authentique.html"> compte</a></li>
+                    </ul>
+                </nav>
+                <a href="pannier.html"><img src="images/cart.png" alt="cart" width="27px"></a>
+                
+                <img src="images/menu.png" alt="menu" class="menuButton" onclick="toogleButton()">
+            </header>
+    </section>
+
+    <!--  ---- section single peoduit---------- -->
+    <section class="single-produits">
+        <div class="conteneur">
+            <div class="row">
+                <div class="col2">
+                    <img src="images/gallery-1.jpg" alt="image produits" width="100%" id="produiItem">
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="images/gallery-1.jpg" alt="image produits" title="click" width="100%"
+                                class="smallImg">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/gallery-2.jpg" alt="image produits" width="100%" class="smallImg">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/gallery-3.jpg" alt="image produits" width="100%" class="smallImg">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/gallery-4.jpg" alt="image produits" width="100%" class="smallImg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col2">
+                    <p> home / <span>produits</span></p>
+                    <h1>t-shirt rouge</h1>
+                    <h3>usd $ 19.OO</h3>
+                    <select>
+                        <option> selectionnez la tail</option>
+                        <option> XXL</option>
+                        <option>XL</option>
+                        <option>MOYEN</option>
+                        <option>grand</option>
+                        <input type="number" value="1">
+                        <input type="submit" value="ajouter au panier">
+                    </select>
+                    <h3> details de produits</h3>
+                    <p>Donnez une touche de style à votre garde robe d'été avec le t'shirt actif pour homme HRX. Associez-le à un 
+                        short pour votre séance d'entrainement du matin ou à un jean pour une soirée avec vos gars.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="produits">
+            <div class="row row2">
+                <h3> tout nos produits</h3>
+                <P>voir plus</P>
+            </div>
+            <div class="conteneur">
+                <div class="row ">
+                    <div class="col4">
+                        <img src="images/product-1.jpg" alt="product-1">
+                        <h3> t-shit rouge</h3>
+                        <div class="icon">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <p>prix: <span>19.99$</span></p>
+                    </div>
+                    <div class="col4">
+                        <img src="images/product-2.jpg" alt="product-1">
+                        <h3>basket jordan</h3>
+                        <div class="icon">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                            <p>prix: <span>69.99$</span></p>
+                    </div>
+                    <div class="col4">
+                        <img src="images/product-3.jpg" alt="product-1">
+                        <h3>style fashion</h3>
+                        <div class="icon">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <p>prix: <span>199.99$</span></p>
+                    </div>
+                    <div class="col4">
+                        <img src="images/product-4.jpg" alt="product-1">
+                        <h3> t-shit puma</h3>
+                        <div class="icon">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                            <p>prix: <span>19.99$</span></p>
+                    </div>
+                </div>
+                <div class="span-fleche">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>&#10230;</span>
+                </div>
+            </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="conteneur">
+                <div class="row">
+                    <div class="col6">
+                        <div class="footer-col1">
+                            <h4>telecharger notre aplication</h4>
+                            <div class="footer-app">
+                                <img src="images/play-store.png" alt="">
+                                <img src="images/play-store.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col6">
+                        <div class="footer-col2">
+                            <h4> bams-store</h4>
+                            <p style="color:#fff ;">Téléchargez l'application pour téléphone mobile Android et ios</p>
+                        </div>
+                    </div>
+                    <div class="col6">
+                        <div class="footer-col3">
+                            <h4>les lien du site</h4>
+                            <ul>
+                                <li><a href=""> a-propos</a></li>
+                                <li><a href=""> service</a></li>
+                                <li><a href=""> acouint</a></li>
+                                <li><a href=""> acceil</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col6">
+                        <div class="footer-col4">
+                            <h4> suivez nous sur reseaux socciaux</h4>
+                            <ul>
+                                <li><a href=""><i class='bx bxl-facebook-circle'></i></a></li>
+                                <li><a href=""><i class='bx bxl-instagram-alt'></i></a></li>
+                                <li><a href=""><i class='bx bxl-whatsapp-square'></i></a></li>
+                                <li><a href=""><i class='bx bxl-youtube'></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <hr>
+            <P class="copyright">tous droit reserver a <span>bams-store </span>&copy; 2024</P>
+
+        </footer>
+
+
+        <script>
+
+            var menuItem = document.getElementById('menuItem')
+            menuItem.style.maxHeight = '0px';
+            menuItem.style.padding = '0px';
+
+            function toogleButton() {
+                if (menuItem.style.maxHeight == '0px') {
+                    menuItem.style.maxHeight = '200px';
+                    menuItem.style.padding = '10px';
+                }
+                else {
+                    menuItem.style.maxHeight = '0px';
+                    menuItem.style.padding = '0px';
+                }
+            }
+
+        </script>
+
+        <script>
+            var produiItem = document.getElementById("produiItem")
+            var smallImg = document.getElementsByClassName("smallImg")
+
+            smallImg[0].onclick = function () {
+                produiItem.src = smallImg[0].src
+            }
+
+            smallImg[1].onclick = function () {
+                produiItem.src = smallImg[1].src
+            }
+
+            smallImg[2].onclick = function () {
+                produiItem.src = smallImg[2].src
+            }
+
+            smallImg[3].onclick = function () {
+                produiItem.src = smallImg[3].src
+            }
+        </script>
+
+</body>
+
+</html>
